@@ -42,6 +42,10 @@ if (!urlParts.port || urlParts.port === '0') {
   urlParts.port = self.location.port;
 }
 
+if(window && window.webpackDev){
+	urlParts.port = window.webpackDev.port || urlParts.port
+}
+
 let hot = false;
 let initial = true;
 let currentHash = '';
