@@ -14,7 +14,7 @@ node_modules
 .eslintrc
 .gitattributes
 .travis.yml
-.github
+.github/
 appveyor.yml
 package-lock.json
 test
